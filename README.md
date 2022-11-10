@@ -11,7 +11,7 @@ Manipulating the from and reply to fields is possible because the SMTP protocol 
 - Always double check the email headers, or view the origional email.
 - Implement in your enterprise network anti spam filters.
 
-You can read more about email spoofing from this great article on (https://cybernews.com/)[https://cybernews.com/secure-email-providers/email-spoofing/] where they discuss what it is and how to prevent it in depth.
+You can read more about email spoofing from this great article on [https://cybernews.com/](https://cybernews.com/secure-email-providers/email-spoofing/) where they discuss what it is and how to prevent it in depth.
 
 # Getting Started
 
