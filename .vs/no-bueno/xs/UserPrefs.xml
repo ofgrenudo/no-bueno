@@ -1,4 +1,9 @@
-﻿<Properties StartupConfiguration="{8B8ADAEC-D2B8-47A9-A4BE-F717E23608F9}|Default">
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{8B8ADAEC-D2B8-47A9-A4BE-F717E23608F9}|Default">
+  <MonoDevelop.Ide.ItemProperties.no-bueno PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,11 +16,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.no-bueno PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
