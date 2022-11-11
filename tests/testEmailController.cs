@@ -4,9 +4,9 @@ using MimeKit;
 
 namespace no_bueno
 {
-    public class emailController
+    public class testEmailController
     {
-        public emailController()
+        public testEmailController()
         {
             var email = new MimeMessage();
             email.From.Add(new MailboxAddress("test", "test@company.com"));
@@ -24,13 +24,11 @@ namespace no_bueno
 
             email.Subject = "Hello World!";
             // if html replace with the following, new TextPart(TextFormat.Html) { Text = body };
-            email.Body = new TextPart ("plain")
+            email.Body = new TextPart("plain")
             {
                 Text = @"
     This is a sample email!
-
 With sample text :)
-
 --- Joshua Winters-Brown
                 "
             };
@@ -46,4 +44,3 @@ With sample text :)
         }
     }
 }
-
