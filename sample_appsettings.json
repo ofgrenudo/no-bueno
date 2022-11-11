@@ -1,12 +1,6 @@
 ﻿{
-  "Logging": {
-    "LogLevel": {
-      "Default": "Warning"
-    }
-  },
-  "Email": { // Get the following information from your email provider.
-    "smtpAddress": "",
-    "smtpUser": "",
-    "smtpPassword": "",
-    "smtpSSL": "true" // This value can be true or false
-  },
+  "smtpAddress": "",
+  "smtpUser": "",
+  "smtpPassword": "",
+  "smtpSSL": ""
+}

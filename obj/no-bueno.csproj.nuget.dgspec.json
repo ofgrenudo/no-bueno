@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/DIGBATA/no-bueno/no-bueno.csproj": {}
+    "/Users/jwintersbro/Desktop/no-bueno/no-bueno.csproj": {}
   },
   "projects": {
-    "/Volumes/DIGBATA/no-bueno/no-bueno.csproj": {
+    "/Users/jwintersbro/Desktop/no-bueno/no-bueno.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/DIGBATA/no-bueno/no-bueno.csproj",
+        "projectUniqueName": "/Users/jwintersbro/Desktop/no-bueno/no-bueno.csproj",
         "projectName": "no-bueno",
-        "projectPath": "/Volumes/DIGBATA/no-bueno/no-bueno.csproj",
+        "projectPath": "/Users/jwintersbro/Desktop/no-bueno/no-bueno.csproj",
         "packagesPath": "/Users/jwintersbro/.nuget/packages/",
-        "outputPath": "/Volumes/DIGBATA/no-bueno/obj/",
+        "outputPath": "/Users/jwintersbro/Desktop/no-bueno/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jwintersbro/.nuget/NuGet/NuGet.Config"
@@ -41,6 +41,14 @@
             "MailKit": {
               "target": "Package",
               "version": "[3.4.2, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

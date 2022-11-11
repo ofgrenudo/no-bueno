@@ -21,11 +21,13 @@ This software is a Proof of Concept and is not developed to be used with malicio
 
 .NET 6
 Mailkit 3.4.2
+Microsoft.Extensions.Configuration
+Microsoft.Extensions.Configuration.Json
+
 
 ## Installation
 
-TODO
-
+Copy the sample_appsettings.json to where ever you are running your application. Once you have coppied it there, rename the file to appsettings.json and open it up. You will want to begin filling out the keys with appropriate values.
 
 
 # Contributing

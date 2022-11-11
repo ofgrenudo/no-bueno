@@ -13,13 +13,20 @@
     <None Remove="tests\" />
     <None Remove="src\" />
     <None Remove="src\interfaces\" />
+    <None Remove="Microsoft.Extensions.Configuration" />
+    <None Remove="Microsoft.Extensions.Configuration.Json" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MailKit" Version="3.4.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="tests\" />
-    <Folder Include="src\" />
-    <Folder Include="src\interfaces\" />
+    <Folder Include="emailManager\" />
+    <Folder Include="emailManager\interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0\appsettings.json" />
   </ItemGroup>
 </Project>
