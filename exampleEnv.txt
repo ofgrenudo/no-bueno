@@ -1,8 +1,0 @@
-﻿########################################################################################################
-#### To get started, copy this file and name it as .env from there fillout all of the below options ####
-########################################################################################################
-
-smtpAddress="smtp.ethereal.email"
-smtpUser="jeremie.little@ethereal.email"
-smtpPassword="X4f551VBFQERR9UvnJ"
-smtpSSL=true
