@@ -1,19 +1,37 @@
-﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{8B8ADAEC-D2B8-47A9-A4BE-F717E23608F9}|Default">
+﻿<Properties StartupConfiguration="{8B8ADAEC-D2B8-47A9-A4BE-F717E23608F9}|Default" GitUserInfo="UsingMD">
   <MonoDevelop.Ide.ItemProperties.no-bueno PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="emailManager/environmentConfiguration.cs">
+    <Files>
+      <File FileName="emailManager/controller.cs" Line="12" Column="90" />
+      <File FileName="emailManager/environmentConfiguration.cs" Line="39" Column="73" />
+      <File FileName="emailManager/interfaces/iEnvironmentConfiguration.cs" Line="10" Column="13" />
+      <File FileName="bin/Debug/net6.0/appsettings.json" Line="5" Column="14" NotebookId="1" />
+      <File FileName="sample_appsettings.json" Line="7" Column="2" NotebookId="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="no-bueno" expanded="True" />
+          <Node name="no-bueno" expanded="True">
+            <Node name="no-bueno" expanded="True">
+              <Node name="bin" expanded="True">
+                <Node name="Debug" expanded="True">
+                  <Node name="net6.0" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="emailManager" expanded="True">
+                <Node name="interfaces" expanded="True" />
+                <Node name="environmentConfiguration.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
 </Properties>

@@ -9,6 +9,7 @@ namespace no_bueno.emailManager
         public controller()
         {
             var myEnvironmentConfiguration = new environmentConfiguration();
+            Console.WriteLine($"SMTP Address: {myEnvironmentConfiguration.smtpAddress}");
             Console.WriteLine($"\r\nSMTP Password: {myEnvironmentConfiguration.smtpPassword()}");
         }
     }

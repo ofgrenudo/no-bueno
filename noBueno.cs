@@ -15,6 +15,9 @@
         {
             var myEmailController = new no_bueno.emailManager.controller();
         }
+
+        Console.WriteLine("\nExting Program");
+        System.Environment.Exit(1);
     }
 
 }

@@ -15,6 +15,7 @@
     <None Remove="src\interfaces\" />
     <None Remove="Microsoft.Extensions.Configuration" />
     <None Remove="Microsoft.Extensions.Configuration.Json" />
+    <None Remove="MessageBox" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MailKit" Version="3.4.2" />

@@ -3,10 +3,11 @@ namespace no_bueno.emailManager.interfaces
 {
     public interface iEnvironmentConfiguration
     {
-        string smtpPort(string? input);
+        string smtpAddress(string? input);
         string smtpUser(string? input);
         string smtpPassword(string? input);
-        string smtpSSL(string? input);
+        bool? smtpSSL(bool? input);
+        int? smtpPort(int? input);
     }
 }
 

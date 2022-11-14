@@ -9,61 +9,67 @@ namespace no_bueno.emailManager
         string _smtpAddress;
         string _smtpUser;
         string _smtpPassword;
-        string _smtpSSL;
+        int? _smtpPort;
+        bool? _smtpSSL;
         readonly string configurationFilePath = @"appsettings.json";
-        readonly string configurationFileRaw = File.ReadAllText(@"appsettings.json");
+        string configurationFileRaw;
 
         public environmentConfiguration()
         {
             /// Load initial values from config file
-            var configurationParameters = JsonDocument.Parse(configurationFileRaw);
-            smtpPassword(configurationParameters.RootElement.GetProperty("smtpPassword").GetString());
-        }
-
-        public string smtpPassword(string? input = "thisisnotvalidpassword")
-        {
-            /// Get value from config file
-            if(input == "thisisnotvalidpassword" && _smtpPassword == null)
-            {
+            try {
+                configurationFileRaw = File.ReadAllText(@"appsettings.json");
                 var configurationParameters = JsonDocument.Parse(configurationFileRaw);
-                return configurationParameters.RootElement.GetProperty("smtpAddress").GetString();
+                smtpAddress(configurationParameters.RootElement.GetProperty("smtpPassword").GetString());
+                smtpUser(configurationParameters.RootElement.GetProperty("smtpPassword").GetString());
+                smtpPassword(configurationParameters.RootElement.GetProperty("smtpPassword").GetString());
+                smtpSSL(configurationParameters.RootElement.GetProperty("smtpPassword").GetBoolean());
+                smtpPort(configurationParameters.RootElement.GetProperty("smtpPassword").GetInt32());
             }
-
-            /// Update value
-            else if (input != "thisisnotvalidpassword")
+            catch (Exception ex)
             {
-                _smtpPassword = input;
-                return _smtpPassword;
-            }
-
-            /// There is a cached value, lets use it.
-            else if (input == "thisisnotvalidpassword" && _smtpPassword != null)
-            {
-                //Console.WriteLine($"environmentConfiguration: {input}");
-                //Console.WriteLine($"environmentConfiguration: {_smtpPassword}");
-                return _smtpPassword;
-            }
-
-            /// None of these worked what do we do? 
-            else
-            {
-                throw new ArgumentException();
+                if(ex is FileNotFoundException)
+                {
+                    Console.WriteLine("\n\nError: File appsettings.json not found. Please check this file and run again.");
+                    Console.WriteLine(ex);
+                    System.Environment.Exit(0);
+                }
+                if(ex is InvalidOperationException ex)
+                {
+                    Console.WriteLine("\n\nError: Please check file type")
+                }
             }
         }
 
-        public string smtpPort(string? input)
+        public string smtpAddress(String? input = null)
         {
-            throw new NotImplementedException();
+            if (input != null) { _smtpAddress = input; }
+            return _smtpAddress;
         }
 
-        public string smtpSSL(string? input)
+        public string smtpPassword(string? input = null)
         {
-            throw new NotImplementedException();
+            if (input != null) { _smtpPassword = input; }
+            return _smtpPassword;
         }
 
-        public string smtpUser(string? input)
+        public int? smtpPort(int? input = null)
         {
-            throw new NotImplementedException();
+            if (input != null) { _smtpPort = input; }
+            return _smtpPort;
+        }
+
+        public bool? smtpSSL(bool? input = null)
+        {
+            if (input != null) { _smtpSSL = input; }
+            return _smtpSSL;
+        }
+
+        public string smtpUser(string? input = null)
+        {
+            if (input != null) { _smtpUser = input; }
+            return _smtpUser;
+
         }
     }
 }
