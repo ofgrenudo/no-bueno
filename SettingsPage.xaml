@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="no_bueno.SettingsPage"
+             Title="Settings">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="0"
+            Margin="20,50">
+
+            <Label Text="SMTP Server Address" Margin="0,0,0,5"/>
+            <Entry x:Name="kSmtpAddress"
+               Placeholder="who would you like to appear as?"/>
+
+            <Label Text="smtp username" Margin="0,20,0,5"/>
+            <Entry x:Name="kSmtpUsername"
+               Placeholder="what is your victims display name?"/>
+
+            <Label Text="smtp password" Margin="0,20,0,5"/>
+            <Entry x:Name="kSmtpPassword"
+              IsPassword="True"
+               Placeholder="what is your victims email address?"/>
+
+            <Label Text="smtp port" Margin="0,20,0,5"/>
+            <Entry x:Name="kSmtpPort"
+               Placeholder="what do you want on the subject line?"/>
+
+            <Button Text="Save" Margin="0,20,0,5"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="200"
+                Clicked="applyStone"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

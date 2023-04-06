@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="no_bueno.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="0"
+            Margin="20,50">
+
+            <Label Text="impersonated" Margin="0,0,0,5"/>
+            <Entry x:Name="kImpersonated"
+               Placeholder="who would you like to appear as?"/>
+
+            <Label Text="victim display name" Margin="0,20,0,5"/>
+            <Entry x:Name="kVictimDisplayName"
+               Placeholder="what is your victims display name?"/>
+
+            <Label Text="victim email" Margin="0,20,0,5"/>
+            <Entry x:Name="kVictimEmail"
+               Placeholder="what is your victims email address?"/>
+
+            <Label Text="subject" Margin="0,20,0,5"/>
+            <Entry x:Name="kSubjectLine"
+               Placeholder="what do you want on the subject line?"/>
+
+            <Label Text="content" Margin="0,20,0,5"/>
+            <Editor x:Name="kEditor"
+                    Placeholder="Enter your response here"
+                    HeightRequest="200"/>
+
+            <Button Text="BANG" Margin="0,20,0,5"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="200"
+                Clicked="fireBANG"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+

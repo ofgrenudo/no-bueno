@@ -1,0 +1,36 @@
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{8B8ADAEC-D2B8-47A9-A4BE-F717E23608F9}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.ItemProperties.no-bueno PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="emailManager/interfaces/iEnvironmentConfiguration.cs">
+    <Files>
+      <File FileName="emailManager/interfaces/iEnvironmentConfiguration.cs" Line="5" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="no-bueno" expanded="True">
+            <Node name="no-bueno" expanded="True">
+              <Node name="bin" expanded="True">
+                <Node name="Debug" expanded="True">
+                  <Node name="net6.0" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="emailManager" expanded="True">
+                <Node name="interfaces" expanded="True">
+                  <Node name="iEnvironmentConfiguration.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="tests" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
